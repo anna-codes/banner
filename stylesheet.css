@@ -1,0 +1,212 @@
+/*Basic reset*/
+
+*{margin: 0; Padding: 0;}
+
+html {
+	font-size: 62.5%
+}
+
+html, body {
+	height:100%;
+}
+
+body {
+	background: #B1E3E2;
+	/*creates blured color around the edge of the screen*/
+	box-shadow: inset 0 0 10rem 2rem #80d0cf;
+    text-align: center;
+}
+
+/*banner*/
+h1 {
+	background: white;
+	/* a little shadow for 3d effect*/
+	box-shadow: 0 0 3rem 0 rgba(0,0,0,0.1), 0 3.6rem 0 -1.8rem #B1E3E2;
+	color: #8699A0;
+	display: inline-block;
+	font-family: arial, veranda;
+	font-size: 1.4rem;
+	line-height: 2.8rem;
+	margin: 12rem 0;
+	outline: none;
+	padding: 1.4rem 3rem;
+	position: relative;
+	text-shadow: 0 0 .1rem #758890;
+	text-transform: uppercase;
+}
+
+/*shadow*/
+h1:after {
+	border-left: 1.8rem solid transparent;
+	border-top: 1.8rem solid #99acb2;
+	border-right: 1.8rem solid transparent;
+	content: "";
+	height: 0;
+	left: 0;
+	position: absolute;
+    top: 100%; 
+	width: 100%;
+	z-index: -1;
+}
+
+/*the ribbon ends*/
+h1:before {
+	background-color: #fff;
+	border: 2.8rem solid rgba(0,0,0,0);
+	border-left: 2.8rem solid #B1E3E2;
+	border-right: 2.8rem solid #B1E3E2;
+	content:"";
+	height:0;
+	left: -15%;
+	position: absolute;
+	top: 1.8rem;
+	width: 130%;
+	/*same color as the container which. in this case the body*/
+	z-index: -1;
+}
+
+h1,h1:before, h1:after {
+	box-sizing: border-box;
+}
+
+
+
+@media (max-width: 599.9px) {
+    body {
+        height: 100%;
+      	width: 100%;
+       }
+
+    h1 {
+      	box-shadow: 0 0 1.5rem 0 rgba(0,0,0,0.1), 0 2.3rem 0 -1rem #B1E3E2;
+      	font-size: .7rem;
+      	line-height: 1.4rem;
+      	margin: 6rem, 0;
+      	padding: .7rem, 1.5rem;
+    }
+
+    h1:after {
+      	border-left: .9rem solid transparent;
+	    border-top: .9rem solid #99acb2;
+	    border-right: .9rem solid transparent;
+	    content: "";
+	    height: 0;
+	    left: 0;
+	    position: absolute;
+        top: 100%; 
+	    width: 100%;
+	    z-index: -1;
+    }
+
+    h1:before {
+      	background: white;
+	   /*we will be using the triangle logic - 2 sided borders and 0 height. 
+	   that will create negative triangles on the left and right*/
+	   border: 1.9rem solid rgba(0,0,0,0);
+	   border-left: 1.9rem solid #B1E3E2;
+	   border-right: 1.9rem solid #B1E3E2;
+	   content:"";
+	   height:0;
+	   left: -15%;
+	   position: absolute;
+	   top: 1.5rem;
+	   width: 130%;
+	   /*same color as the container which. in this case the body*/
+	   z-index: -1;
+    }
+}
+
+@media (min-width: 600px)
+and (max-width: 1023.9px) {
+
+	body {
+	    box-shadow: inset 0 0 10rem 2rem #80d0cf;
+        text-align: center;
+    }
+
+    h1 {
+	    box-shadow: 0 0 3rem 0 rgba(0,0,0,0.1), 0 3.6rem 0 -1.8rem #B1E3E2;
+	    font-size: 1.4rem;
+	    line-height: 2.8rem;
+	    margin: 12rem 0;
+	    padding: 1.4rem 3rem;
+	    position: relative;
+	    text-shadow: 0 0 .1rem #758890;
+	}
+
+    h1:after {
+	    border-left: 1.8rem solid transparent;
+	    border-top: 1.8rem solid #99acb2;
+	    border-right: 1.8rem solid transparent;
+	    height: 0;
+	    left: 0;
+	    position: absolute;
+        top: 100%; 
+	    width: 100%;
+	    z-index: -1;
+    }
+
+    h1:before {
+	    border: 2.8rem solid rgba(0,0,0,0);
+	    border-left: 2.8rem solid #B1E3E2;
+	    border-right: 2.8rem solid #B1E3E2;
+	    height:0;
+	    left: -15%;
+	    position: absolute;
+	    top: 1.8rem;
+	    width: 130%;
+	    z-index: -1;
+    }
+}
+
+@media (min-width: 1024px) {
+	body {
+	    box-shadow: inset 0 0 20rem 4rem #80d0cf;
+        text-align: center;
+    }
+    
+    h1 {
+	    box-shadow: 0 0 6rem 0 rgba(0,0,0,0.1), 0 7.2rem 0 -3.6rem #B1E3E2;
+	    font-size: 2.8rem;
+	    line-height: 5.6rem;
+	    margin: 24rem 0;
+	    padding: 2.8rem 6rem;
+	    position: relative;
+	    text-shadow: 0 0 .2rem #758890;
+	}
+    
+    h1:after {
+	    border-left: 3.6rem solid transparent;
+	    border-top: 3.6rem solid #99acb2;
+	    border-right: 3.6rem solid transparent;
+	    height: 0;
+	    left: 0;
+	    position: absolute;
+        top: 100%; 
+	    width: 100%;
+	    z-index: -1;
+    }
+    
+    h1:before {
+	    border: 5.6rem solid rgba(0,0,0,0);
+	    border-left: 5.6rem solid #B1E3E2;
+	    border-right: 5.6rem solid #B1E3E2;
+	    height:0;
+	    left: -15%;
+	    position: absolute;
+	    top: 3.6rem;
+	    width: 130%;
+	    z-index: -1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
